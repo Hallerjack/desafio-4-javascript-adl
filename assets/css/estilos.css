@@ -26,7 +26,7 @@
     padding: 3em;
 }
 
-/* CONTENEDORES VENTAS */
+/* CONTENEDORES VENTAS HOME */
 
 #venta {
     display: flex;
@@ -40,7 +40,7 @@
     gap: 20px;
 }
 
-/* CONTENEDORES ALQUILER */
+/* CONTENEDORES ALQUILER HOME */
 
 #alquiler {
     display: flex;
@@ -49,6 +49,22 @@
 }
 
 .section-alquiler {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+/* PAGINA VENTAS */
+
+.section-ventas-page {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+/* PAGINA ALQUILER */
+
+.section-alquiler-page {
     display: flex;
     flex-direction: row;
     gap: 20px;
