@@ -97,4 +97,7 @@ for (let propiedad of propiedadesAlquiler) {
 
 cardAlquiler.innerHTML = html2;
 
+
 /* PARA MOSTRAR SOLO 3 de las 4 propiedades en el home, hay que armar algo asi como una variable y filtrar selecionando solo los tres primeros objetos del array. EJMEPLO: array[2] */
+
+/* console.log(propiedadesAlquiler[2]); */
