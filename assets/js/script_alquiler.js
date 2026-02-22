@@ -45,34 +45,35 @@ const propiedadesAlquiler = [
     },
 ];
 
-let cardAlquiler = document.querySelector(".section-alquiler")
+let cardAlquiler = document.querySelector(".section-alquiler");
+
+const propiedadesAlquilerLimitadas = propiedadesAlquiler.slice(0, 3);
 
 let html2 = ''
 
+function smokeCondition(propiedad) {
+    let permitidoFumar = `<p style="color: green"><i class="fas fa-smoking"></i> Permitido fumar</p>`
+    let prohibidoFumar = `<p style="color: red"><i class="fas fa-smoking-ban"></i> No se permite fumar</p>`
+
+    if (propiedad.smoke === true) {
+            return permitidoFumar
+        } else {
+            return prohibidoFumar
+        };
+};
+
+function petsCondition(propiedad) {
+    let permitidaMascota= `<p style="color: green"><i class="fas fa-paw"></i> Mascotas permitidas</p>`
+    let prohibidaMascota = `<p style="color: red"><i class="fa-solid fa-ban"></i> No se permiten mascotas</p>`
+
+    if (propiedad.pets === true) {
+            return permitidaMascota
+        } else {
+            return prohibidaMascota
+        };
+};
 
 for (let propiedad of propiedadesAlquiler) {
-
-    function smokeCondition() {
-        let permitidoFumar = `<p style="color: green"><i class="fas fa-smoking"></i> Permitido fumar</p>`
-        let prohibidoFumar = `<p style="color: red"><i class="fas fa-smoking-ban"></i> No se permite fumar</p>`
-
-        if (propiedad.smoke === true) {
-                return permitidoFumar
-            } else {
-                return prohibidoFumar
-            };
-    };
-
-    function petsCondition() {
-        let permitidaMascota= `<p style="color: green"><i class="fas fa-paw"></i> Mascotas permitidas</p>`
-        let prohibidaMascota = `<p style="color: red"><i class="fa-solid fa-ban"></i> No se permiten mascotas</p>`
-
-        if (propiedad.pets === true) {
-                return permitidaMascota
-            } else {
-                return prohibidaMascota
-            };
-    };
 
     html2 += `
         <div class="card">
@@ -87,16 +88,11 @@ for (let propiedad of propiedadesAlquiler) {
                     <i class="fas fa-bath"></i> ${propiedad.baños}
                 </p>
                 <p><i class="fas fa-dollar-sign"></i>${propiedad.costo}</p>
-                <p class="text-danger">${smokeCondition()}</p>
-                <p class="text-danger">${petsCondition()}</p>
+                <p class="text-danger">${smokeCondition(propiedad)}</p>
+                <p class="text-danger">${petsCondition(propiedad)}</p>
             </div>
         </div>
     `
 };
 
 cardAlquiler.innerHTML = html2;
-
-
-/* PARA MOSTRAR SOLO 3 de las 4 propiedades en el home, hay que armar algo asi como una variable y filtrar selecionando solo los tres primeros objetos del array. EJMEPLO: array[2] */
-
-/* console.log(propiedadesAlquiler[2]); */
