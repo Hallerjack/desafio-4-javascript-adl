@@ -47,7 +47,7 @@ const propiedadesAlquiler = [
     },
 ];
 
-/* DATA PROPIEDADES ALQUILER */
+/* DATA PROPIEDADES EN VENTA */
 
 const propiedadesEnVenta = [
     {
@@ -194,10 +194,9 @@ function renderPropiedadesVenta(propiedadesEnVenta, containerVenta) {
     containerVenta.innerHTML = htmlVentas;
 };
 
-
 /* CONDICIONES SEGÚN PÁGINA */
 
-/* Alquiler */
+/* Alquiler (mostrar solo 3 propiedades en el home) */
 
 if (cardAlquilerHome) {
     renderPropiedadesAlquiler(propiedadesAlquiler.slice(0,3), cardAlquilerHome);
@@ -207,7 +206,7 @@ if (cardAlquilerPage) {
     renderPropiedadesAlquiler(propiedadesAlquiler, cardAlquilerPage);
 }
 
-/* Ventas */
+/* Ventas (mostrar solo 3 propiedades en el home) */
 
 if (cardVentasHome) {
     renderPropiedadesVenta(propiedadesEnVenta.slice(0,3), cardVentasHome);

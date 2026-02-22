@@ -2,7 +2,7 @@
 
 .main-section {
     background-image: url('../img/img-main.jpeg');
-    background-size: cover; /* La imagen cubrirá todo el ancho y largo */
+    background-size: cover;
     background-position: center;
     height: 300px;
     display: flex;
@@ -54,7 +54,7 @@
     gap: 20px;
 }
 
-/* PAGINA VENTAS */
+/* PÁGINA VENTAS */
 
 .section-ventas-page {
     display: flex;
@@ -62,7 +62,7 @@
     gap: 20px;
 }
 
-/* PAGINA ALQUILER */
+/* PÁGINA ALQUILER */
 
 .section-alquiler-page {
     display: flex;
