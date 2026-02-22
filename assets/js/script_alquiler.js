@@ -45,14 +45,13 @@ const propiedadesAlquiler = [
     },
 ];
 
-
 let cardAlquiler = document.querySelector(".section-alquiler")
 
 let html2 = ''
 
 
 for (let propiedad of propiedadesAlquiler) {
-    
+
     function smokeCondition() {
         let permitidoFumar = `<p style="color: green"><i class="fas fa-smoking"></i> Permitido fumar</p>`
         let prohibidoFumar = `<p style="color: red"><i class="fas fa-smoking-ban"></i> No se permite fumar</p>`
