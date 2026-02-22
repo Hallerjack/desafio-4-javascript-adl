@@ -23,6 +23,24 @@ En el caso del atributo smoke y pets, utilizar un condicional que muestre un men
 
 2. Generar dos arreglos de propiedades (Uno para venta y otro para alquiler) que cumplan la siguiente estructura que se muestra de ejemplo. Una vez generados los arreglos de objetos para las propiedades en alquiler y en venta, añade al menos 4 objetos en cada arreglo.(2 puntos).
 
+- Ejemplo: 
+
+```javascript
+    const propiedadesAlquiler = [
+        {
+            nombre: '',
+            src: '',
+            descripcion: '',
+            ubicacion: '',
+            habitaciones: 0,
+            baños: 0,
+            costo: 000,
+            smoke: false,
+            pets: true
+        },
+    ]
+```
+
 3. Utilizar ciclos para recorrer el arreglo de con los objetos de propiedades y la interpolación y el innerHTML para generar templates y agregar la de las propiedades en su respectiva página HTML. (4 Puntos).
 
 4. Utilizar condicionales para realizar la lógica asociada en caso de que se permitan mascotas y fumar en la propiedad. (2 Puntos).
