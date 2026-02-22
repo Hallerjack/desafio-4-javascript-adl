@@ -81,7 +81,7 @@ for (let propiedad of propiedadesEnVenta) {
             <div class="card-body">
                 <h5 class="card-title">${propiedad.nombre}</h5>
                 <p class="card-text">${propiedad.descripcion}</p>
-                <p><i class="fas fa-map-marker-alt"></i></p>
+                <p><i class="fas fa-map-marker-alt"></i> ${propiedad.ubicacion}</p>
                 <p>
                     <i class="fas fa-bed"></i> ${propiedad.habitaciones}
                     <i class="fas fa-bath"></i> ${propiedad.baños}

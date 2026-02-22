@@ -14,11 +14,42 @@
 
 .card {
     height: 100px;
+    width: 450px;
 }
 
 .card img{
     height: 250px;
+    width: auto;
 }
 
-/* CONTENEDORES */
+.section-container {
+    padding: 3em;
+}
 
+/* CONTENEDORES VENTAS */
+
+#venta {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.section-ventas {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+/* CONTENEDORES ALQUILER */
+
+#alquiler {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.section-alquiler {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
